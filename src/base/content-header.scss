@@ -1,0 +1,23 @@
+@import "../core/index";
+
+div[role=content-header]{
+  padding: $spacing-5;
+  position: relative;
+  border-bottom: 1px solid $iugu-neutral-gray-5;
+  margin-bottom: $spacing-4;
+  span {
+    text-transform: uppercase;
+    color: $iugu-neutral-gray-3;
+    font-size: 0.75em;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 500;
+  }
+  h1 {
+    font-size: 1.3125em;
+    line-height: 1.3125em;
+    color: $iugu-neutral-dark-5;
+    font-weight: 300;
+    margin: 0 $spacing-3 0 0;
+  }
+}

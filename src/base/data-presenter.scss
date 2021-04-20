@@ -1,0 +1,42 @@
+@import "../core/index";
+
+span[role="currency"],
+span[role="number"] {
+  display: block;
+  font-weight: bold;
+  letter-spacing: .06em;
+  font-size: 1em;
+  font-family: "Monaco", monospace;
+  text-align: right;
+}
+
+span[role="number"] {
+  text-align: left;
+}
+
+span[role="date"],
+span[role="text"] {
+  display: block;
+  font-size: 1em;
+}
+
+span.caption {
+  color: $iugu-neutral-dark-4;
+  display: block;
+  margin-bottom: 2px;
+  font-size: .8em;
+}
+
+a[role=button].default.link {
+  line-height: 1.2em;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: auto;
+  font-weight: 300;
+  letter-spacing: normal;
+  max-width: 300px;
+}

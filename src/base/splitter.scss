@@ -1,0 +1,15 @@
+@import "../core/index";
+
+.split-view {
+  display:flex;
+  flex-wrap: nowrap;
+  justify-content:space-between;
+}
+
+.split-view-vertical {
+  flex-direction:column;
+}
+
+.split-view-horizontal {
+  flex-direction:row;
+}

@@ -1,0 +1,16 @@
+@import "../core/index";
+
+div[role="blocks"]{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: $spacing-4;
+  div {
+    width: 100%;
+  }
+  span[role="currency"] {
+    text-align: left;
+  }
+}

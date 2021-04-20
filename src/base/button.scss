@@ -1,0 +1,313 @@
+@import "../core/index";
+
+input[role=button],
+button[role=button],
+a[role=button] {
+  border-radius: 2px;
+  height: 2.65em;
+  line-height: 2.6em;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  padding: 0 0.93em;
+  box-shadow: 0 0 2px rgba(0,0,0,.12), 0 2px 2px rgba(0,0,0,.2);
+  font-family: "museo-sans", Arial,Verdana;
+  font-weight: 500;
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  &.default {
+    background-color: $iugu-base;
+    color: #FFF;
+    border: 2px solid transparent;
+    box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.2);
+    &:hover {
+      background-color: $iugu-base-dark; 
+      border-color: $iugu-base-dark;
+    }
+    &.secondary {
+      background-color: #FFF;
+      color: $iugu-base;
+      border: 2px solid transparent;
+      &:hover {
+        background: $iugu-neutral-light-6;
+        color: $iugu-neutral-gray-3;
+      }
+    }
+    &.outline {
+      background-color: #FFF;
+      color: $iugu-base;
+      border: 1px solid;
+      border-color: $iugu-base;
+      &:hover {
+        color: $iugu-base-dark; 
+        border-color: $iugu-base-dark;
+      }
+    }
+    &.ghost {
+      background-color: transparent;
+      color: $iugu-base;
+      border: 2px solid;
+      border-color: transparent;
+      box-shadow: none;
+      &:hover {
+        color: $iugu-base-dark;
+        background-color: $iugu-neutral-light-5;
+        border-color: $iugu-neutral-light-5;
+      }
+    }
+    &.link {
+      background-color: transparent;
+      color: $iugu-base;
+      border: 2px solid;
+      border-color: transparent;
+      box-shadow: none;
+      &:hover {
+        color: $iugu-base-dark;
+      }
+    }
+  }
+
+  &.danger {
+    background-color: $iugu-red;
+    color: #FFF;
+    border: 2px solid;
+    border-color: $iugu-red;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.2);
+    &:hover {
+      background-color:$iugu-coral; 
+      border-color:$iugu-coral;
+    }
+    &.secondary {
+      background-color: #FFF;
+      color: $iugu-red;
+      border: 1px solid;
+      border-color: #FFF;
+      &:hover {
+        background: $iugu-neutral-light-6;
+        color: $iugu-neutral-gray-3;
+      }
+    }
+    &.outline {
+      background-color: #FFF;
+      color: $iugu-red;
+      border: 2px solid;
+      border-color: $iugu-red;
+      &:hover {
+        color:$iugu-coral; 
+        border-color:$iugu-coral;
+      }
+    }
+    &.ghost {
+      background-color: transparent;
+      color: $iugu-red;
+      border: 2px solid;
+      border-color: transparent;
+      box-shadow: none;
+      &:hover {
+        color: $iugu-red;
+        background-color: $iugu-coral-lighter;
+        border-color: $iugu-coral-lighter;
+      }
+    }
+    &.link {
+      background-color: transparent;
+      color: $iugu-red;
+      border: 2px solid;
+      border-color: transparent;
+      box-shadow: none;
+      &:hover {
+        color:$iugu-coral;
+      }
+    }
+  }
+
+  &.safety {
+    background-color: $iugu-green;
+    color: #FFF;
+    border: 2px solid;
+    border-color: $iugu-green;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.2);
+    &:hover {
+      background-color: $iugu-forest-green; 
+      border-color: $iugu-forest-green;
+    }
+    &.outline {
+      background-color: #FFF;
+      color: $iugu-green;
+      border: 2px solid;
+      border-color: $iugu-green;
+      &:hover {
+        color: $iugu-forest-green;
+        border-color: $iugu-forest-green;
+      }
+    }
+    &.ghost {
+      background-color: transparent;
+      color: $iugu-green;
+      border: 2px solid;
+      border-color: transparent;
+      box-shadow: none;
+      &:hover {
+        color: $iugu-forest-green;
+        background-color: $iugu-vivid-green-lighter;
+        border-color: $iugu-vivid-green-lighter;
+      }
+    }
+    &.link {
+      background-color: transparent;
+      color: $iugu-green;
+      border: 2px solid;
+      border-color: transparent;
+      box-shadow: none;
+      &:hover {
+        color: $iugu-forest-green;
+      }
+    }
+  }
+
+  &.warning {
+    background-color: $iugu-orange;
+    color: #FFF;
+    border: 2px solid;
+    border-color: $iugu-orange;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.2);
+    &:hover {
+      background-color:$iugu-orange-darker; 
+      border-color:$iugu-orange-darker;
+    }
+    &.outline {
+      background-color: #FFF;
+      color: $iugu-orange;
+      border: 2px solid;
+      border-color: $iugu-orange;
+      &:hover {
+        color:$iugu-orange-darker; 
+        border-color:$iugu-orange-darker;
+      }
+    }
+    &.ghost {
+      background-color: transparent;
+      color: $iugu-orange;
+      border: 2px solid;
+      border-color: transparent;
+      box-shadow: none;
+      &:hover {
+        color: $iugu-orange-darker;
+        background-color: $iugu-orange-lighter;
+        border-color: $iugu-orange-lighter;
+      }
+    }
+    &.link {
+      background-color: transparent;
+      color: $iugu-orange;
+      border: 2px solid;
+      border-color: transparent;
+      box-shadow: none;
+      &:hover {
+        color:$iugu-orange-darker;
+      }
+    }
+  }
+
+  &.generic {
+    background-color: $iugu-neutral-gray-2;
+    color: #FFF;
+    border: 2px solid;
+    border-color: $iugu-neutral-gray-2;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.2);
+    &:hover {
+      background-color: $iugu-neutral-gray-1;
+      border-color: $iugu-neutral-gray-1;
+    }
+    &.outline {
+      background-color: #FFF;
+      color:  $iugu-neutral-gray-2;
+      border: 2px solid;
+      border-color: $iugu-neutral-gray-2;
+      &:hover {
+        color:  $iugu-neutral-gray-1;
+        border-color:  $iugu-neutral-gray-1;
+      }
+    }
+    &.ghost {
+      background-color: transparent;
+      color: $iugu-neutral-gray-1;
+      border: 2px solid;
+      border-color: transparent;
+      box-shadow: none;
+      &:hover {
+        color: $iugu-neutral-gray-2;
+        background-color: $iugu-neutral-light-5;
+        border-color: $iugu-neutral-light-5;
+      }
+    }
+    &.link {
+      background-color: transparent;
+      color: $iugu-neutral-gray-2;
+      border: 2px solid;
+      border-color: transparent;
+      box-shadow: none;
+      &:hover {
+        color: $iugu-neutral-gray-1;
+      }
+    }
+  }
+
+  &.mini {
+    font-size: .85em;
+    text-align: center;
+    height: 1.8em;
+    line-height: 1.6em;
+    padding: 0 $spacing-3;
+  }
+
+  &.small {
+    height: 2em;
+    line-height: 1.8em;
+    padding: 0 $spacing-3;
+    color: #FFF;
+  }
+
+  &.large {
+    height: 3.4em;
+    font-size: 1.1em;
+    padding: 0 $spacing-4;
+    line-height: 3.3em;
+  }
+
+  &:disabled,
+  &[disabled]{
+    cursor: not-allowed;
+    border-color: $iugu-neutral-light-4;
+    background-color: $iugu-neutral-light-4;
+    color: $iugu-neutral-dark-5;
+    &:hover {
+      border-color: $iugu-neutral-light-4;
+      background-color: $iugu-neutral-light-4;
+      color: $iugu-neutral-dark-5;
+    }
+    &.outline {
+      background: transparent;
+      border-color: $iugu-neutral-light-4;
+      color: $iugu-neutral-light-1;
+      &:hover {
+        background: transparent;
+        border-color: $iugu-neutral-light-4;
+        color: $iugu-neutral-light-1;
+      }
+    }
+    &.ghost,
+    &.link {
+      color: $iugu-neutral-light-1;
+      background: transparent;
+      border-color: transparent;
+      &:hover {
+        color: $iugu-neutral-light-1;
+        background: transparent;
+        border-color: transparent;
+      }
+    }
+  }
+}
