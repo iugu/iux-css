@@ -13,3 +13,18 @@
 .split-view-horizontal {
   flex-direction:row;
 }
+
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+  flex-direction: column;
+  -webkit-flex-direction: 0;
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+}
